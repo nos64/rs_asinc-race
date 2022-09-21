@@ -1,0 +1,83 @@
+@import '../../../style/var';
+
+.garage-title,
+.garage-title-page {
+  text-align: center; 
+  padding-bottom: 10px;
+}
+
+.garage-li {
+  padding-bottom: 10px;
+}
+.car-buttuns-wrapper {
+  display: flex;
+}
+
+
+.select-button,
+.remove-button {
+margin-right: 10px;
+}
+
+.car-name {
+  font-size: 22px;
+}
+
+.road {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+  border-bottom: 2px dotted #fff;
+}
+
+.launch-pad {
+  width: 100%;
+  display: flex;
+}
+
+.control-panel {
+  display: flex;
+  padding-right: 10px;
+}
+
+
+
+.start-engine-button,
+.stop-engine-button {
+  width: 45px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  transition: all .3s ease-in-out;
+}
+
+.start-engine-button:hover,
+.stop-engine-button:hover {
+  background-color: $btnHoverColor;
+}
+
+.start-engine-button:disabled {
+  background-color: green;
+  color: #fff;
+  cursor:auto;
+}
+
+.stop-engine-button:disabled {
+  background-color: red;
+  color: #fff;
+  cursor:auto;
+}
+
+.car {
+  width: 60px;
+  height: auto;
+  margin-left: 5px;
+  padding-bottom: 0;
+}
+
+.flag {
+  width: 20px;
+  height: 40px;
+  margin-right: 100px;
+}

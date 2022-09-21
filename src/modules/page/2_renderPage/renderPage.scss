@@ -1,0 +1,126 @@
+@import '../../../style/var';
+
+.wrapper {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+padding: 0 30px;
+}
+
+.menu {
+  display: flex;
+  gap: 10px;
+  padding: 20px 0;
+}
+
+.prev-button,
+.next-button,
+.reset-button,
+.race-button,
+.button {
+  border-radius: 5px;
+  border: none;
+  background-color: $btnColor;
+  transition: all .3s ease-in-out;
+}
+
+.prev-button:hover,
+.next-button:hover,
+.reset-button:hover,
+.race-button:hover,
+.button:hover {
+  background-color: $btnHoverColor;
+}
+
+.prev-button:active,
+.next-button:active,
+.reset-button:active,
+.race-button:active,
+.button:active {
+  background-color: $btnActivColor;
+}
+
+.prev-button:disabled,
+.next-button:disabled,
+.reset-button:disabled,
+.race-button:disabled,
+.button:disabled {
+  color: #fff;
+  background-color: $btnDisabled;
+  cursor:auto;
+}
+
+
+.view-active {
+  background-color: $btnActivColor;
+}
+
+.input {
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.input:hover,
+.input:active,
+.input:focus {
+  box-shadow: 0px 0px 5px 5px #f9fd1b;
+}
+
+.form {
+  display: flex;
+  gap: 5px;
+  padding-bottom: 10px;
+}
+
+.form-button {
+  width: 80px;
+}
+
+.race-controls {
+  display: flex;
+  gap: 5px;
+  padding-bottom: 40px;
+}
+
+.reset-button,
+.race-button {
+  width: 90px;
+}
+
+.generate-button {
+  width: 120px;
+  border-radius: 5px;
+  border: 2px solid $btnActivColor;
+  background-color: $btnColor;
+  transition: all .3s ease-in-out;
+}
+.generate-button:hover {
+  background-color: $btnActivColor;
+}
+
+.prev-button,
+.next-button {
+  width: 60px;
+  height: 25px;
+}
+
+.prev-button {
+  margin-right: 20px;
+}
+
+.message-wrapper {
+  position: absolute;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  top: 50%;
+  font-size: 50px;
+  text-shadow: 1px 1px 2px $btnColor, 0 0 1em $btnColor, 0 0 0.2em $btnDisabled;
+  display: none;
+}
+
+.message-visible {
+  display: block;
+}
+

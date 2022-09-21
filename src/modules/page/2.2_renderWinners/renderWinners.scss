@@ -1,0 +1,40 @@
+@import '../../../style/var';
+
+.winners-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.winners-title,
+.winners-title-page {
+  padding-bottom: 15px;
+}
+.winners-table {
+  width: 70%;
+  border: 1px solid grey;
+  border-collapse: collapse;
+  font-size: 20px;
+}
+
+th {
+  padding: 10px;
+  border: 1px solid grey;
+  letter-spacing: 200%;
+}
+
+td {
+  border: 1px solid grey;
+  text-align: center;
+}
+
+.table-button {
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.table-button:hover {
+  background-color: $btnDisabled;
+}
